@@ -22,30 +22,30 @@ rsjf-platform/
 ├── dist.zip    						// 生产压缩包
 └── docs           						// 项目原型、UI、需求文档
 │   ├── keZhan
-│	├── faChan							
+│   ├── faChan							
 └── app           						// 项目开发目录
     ├── 404.html						// 404页面
     ├── app.js							// 入口脚本文件
     ├── bootstrap.js					// requirejs配置文件
     ├── index.html						// 入口页面
  	├── lib             				// 第三方插件包
- 	│ 	├── angularjs
+ 	│   ├── angularjs
  	│   └── require
  	├── assets             				// 静态资源文件
- 	│ 	├── images
+ 	│   ├── images
  	│   ├── fonts
- 	│ 	└── css
+ 	│   └── css
  	└── modules         				// 项目模块
  		├── common      				// 公共模块
  		│   └── login                   // 公共组件、页面
   		├── keZhan
  		│   └── index   				// 页面
  		│       ├── index.ctrl.js
- 		│		├── index.svr.js
- 		│		├── index.css
- 		│		├── index.html
- 		│		└── index.dir.js
-        └── faChang
+ 		│	├── index.svr.js
+ 		│	├── index.css
+ 		│	├── index.html
+ 		│	└── index.dir.js
+                └── faChang
 ```
 
 ## 任务说明
@@ -72,6 +72,7 @@ npm install && bower install
 gulp dev
 ```
 安装第三方插件包后，执行 `gulp dev`，包含以下过程：
+
 1. 复制第三方插件到`app/lib`目录
 2. 以app目录作为根目录启动HTTP服务器，自动打开浏览器
 3. 监听目录下所有html、js、css文件变动，自动刷新浏览器
@@ -80,6 +81,7 @@ gulp dev
 gulp build
 ```
 开发完成后，执行 `gulp build` 生成文件并最终压缩成zip包，包含以下过程：
+
 1. 复制第三方插件到`app/lib`目录
 2. 打上 md5 签名压缩html\js\css并输出到 dist 文件夹
 3. 把 dist压缩成zip
