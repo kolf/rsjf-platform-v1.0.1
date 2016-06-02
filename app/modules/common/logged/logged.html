@@ -1,0 +1,261 @@
+<div class="navbar navbar-default">
+  <div class="container-full">
+    <div class="pull-left">
+      <button class="open-left"><i class="fa fa-bars"></i></button>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" bs-dropdown>运营管理员
+                    <span class="caret"></span>
+                </a>
+        <ul class="dropdown-menu">
+          <li ng-repeat="i in ['帐户维护', '密码修改']"><a ng-href="#action{{i}}">{{i}}</a></li>
+          <li class="divider"></li>
+          <li><a href="">退出</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+  <div class="sidebar">
+    <a class="header-brand">
+      <img width="122" src="../assets/images/common/logo.png" alt="">
+    </a>
+    <ul class="nav-sidebar">
+      <li><a href="">我的融数金服</a></li>
+      <li><a href="" class="active">课栈</a></li>
+      <li><a href="">清结算管理</a></li>
+      <li><a href="">交易查询管理</a></li>
+      <li><a href="">信用授信管理</a></li>
+      <li><a href="">信用授信管理</a></li>
+      <li><a href="">信用授信管理</a></li>
+      <li><a href="">系统管理</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="container-full">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- <h2 class="page-header">课栈</h2> -->
+          <!-- <div class="page-title-box">
+                        <ol class="breadcrumb pull-right">
+                            <li>
+                                课栈
+                            </li>
+                            <li class="active">
+                                学生审核
+                            </li>
+                        </ol>
+                        <div class="page-title">学生放款</div>
+                    </div> -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="">学生授信查询</a></li>
+            <li><a href="">机构授信查询</a></li>
+            <li><a href="">资金方审核</a></li>
+            <li><a href="">充值</a></li>
+            <li><a href="">提现</a></li>
+          </ul>
+          <div class="search-box clearfix">
+            <div class="pull-left">
+              <div class="dropdown pull-left">
+                <button class="btn btn-default dropdown-toggle" bs-dropdown>
+                  审核状态
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">待初审</a></li>
+                  <li><a href="#">待终审</a></li>
+                </ul>
+              </div>
+              <div class="dropdown pull-left">
+                <button class="btn btn-default dropdown-toggle" bs-dropdown>
+                  合作平台
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">会唐-会邦</a></li>
+                  <li><a href="#">课栈</a></li>
+                  <li><a href="#">君融贷</a></li>
+                  <li><a href="#">棉庄</a></li>
+                </ul>
+              </div>
+              <div class="dropdown pull-left">
+                <button class="btn btn-default dropdown-toggle" bs-dropdown>
+                  审批额度
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">100~1000</a></li>
+                  <li><a href="#">1000~5000</a></li>
+                  <li><a href="#">5000~1万</a></li>
+                  <li><a href="#">1万~5万</a></li>
+                  <li><a href="#">5万~20万</a></li>
+                </ul>
+              </div>
+            </div>
+            <form class="form-inline pull-right">
+              <div class="form-group">
+                <div class="input-group">
+                  <input placeholder="申请人/申请编号/营业执照号" type="text" class="form-control"><span class="input-group-addon">搜索</span></div>
+              </div>
+            </form>
+
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>申请编号</th>
+                  <th>申请人</th>
+                  <th>营业执照号</th>
+                  <th>申请额度（元）</th>
+                  <th>申请期限（月）</th>
+                  <th>审核状态</th>
+                  <th>合作平台</th>
+                  <th>申请日期</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a data-placement="center" bs-modal="vm.modal" href="javascript:;">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>2016011219553900008</td>
+                  <td>M000003</td>
+                  <td>P000006</td>
+                  <td>100</td>
+                  <td>ht_test03</td>
+                  <td>2016011219524200001 </td>
+                  <td>M000002 </td>
+                  <td><a ng-click="vm.open()" href="">审核</a> <a href="">详情</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center">
+            <ul class="pagination">
+              <li><a href="#">首页</a></li>
+              <li><a href="#">上一页</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">下一页</a></li>
+              <li><a href="#">尾页</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div ui-view></div> -->

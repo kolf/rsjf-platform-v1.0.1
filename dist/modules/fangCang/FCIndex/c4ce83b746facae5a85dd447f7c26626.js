@@ -1,0 +1,1 @@
+function FCIndexController(o,e,n){var r=this;r.name="nico",$("#nico").css("color","red")}define(["../../../38459714ca0f8a4a32d1d9d5419fd8ce"],function(o){o.controller("FCIndexController",FCIndexController),FCIndexController.$inject=["$scope","$state","UserLogin"]}),FCIndexController.prototype={};

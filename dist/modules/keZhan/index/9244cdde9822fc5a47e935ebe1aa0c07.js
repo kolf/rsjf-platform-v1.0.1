@@ -1,0 +1,1 @@
+define(["../../../38459714ca0f8a4a32d1d9d5419fd8ce"],function(n){function e(n){var e=this;e.name="首页index"}n.controller("IndexController",e),e.$inject=["toastr"]});

@@ -1,0 +1,76 @@
+<!--
+<div class="topbar">
+    <div class="container">
+        <div class="pull-right">
+            <span>欢迎你，</span><span ng-bind='name'></span>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="container menu">
+        <ul class="" id="head-nav">
+
+            <li ng-repeat="menu in menus">
+                <a  role="button" data-toggle="dropdown"  data-target="#" href="javascript:;">{{menu.menuName}}</a>
+                <ul class="" role="menu" aria-labelledby="dropdownMenu">
+                    <li ng-repeat="item in menu.submenus">
+                        <a ng-href="{{item.menuPath}}" ng-if="!(item.menuPath | showMenusUrl)">{{item.menuName}} </a>
+                        &lt;!&ndash;璺敱&ndash;&gt;
+                        <a  ui-sref="{{item.menuPath | getMenusUrl}}" ui-sref-opts="{reload: true}" ng-if="(item.menuPath | showMenusUrl)">{{item.menuName}}</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="visible-xs ">
+                <a href="">登录</a>
+            </li>
+            <li class="visible-xs btn-block">
+                <a href="loginOut" >退出</a>
+            </li>
+        </ul>
+    </div>
+</div>
+-->
+
+<div class="nav  navbar-inverse ">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav pull-right l-h30"><li><a href="">你好,{{name}}</a></li><li><a href="../../loginOut">退出</a></li></ul>
+    </div>
+</div>
+<div class="navbar navbar-default login-navbar ">
+    <div class="container">
+        <div class="navbar-header" bs-dropdown>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar" bs-dropdown>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <img class="navbar-brand login-brand" src="assets/images/common/logo_02.png">
+            </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" >
+            <ul class="nav navbar-nav" id="head-nav">
+
+                <li ng-repeat="item in menus">
+                    <a  role="button" class="nav-btn" data-toggle="dropdown"  data-target="#" href="javascript:;" bs-dropdown>{{item.menuName}}</a>
+                    <ul class="dropdown-menu multi-level nav-list" role="menu" aria-labelledby="dropdownMenu">
+                        <li ng-repeat="childrenMenu in item.submenus">
+                            <a ng-href="{{childrenMenu.menuPath}}">{{childrenMenu.menuName}} </a>
+                            <a  ui-sref="{{childrenMenu.menuPath | getMenusUrl}}" ui-sref-opts="{reload: true}" ng-if="(childrenMenu.menuPath | showMenusUrl)">{{childrenMenu.menuName}}</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="visible-xs ">
+                    <a href="">登录</a>
+                </li>
+                <li class="visible-xs btn-block">
+                    <a href="loginOut" >退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

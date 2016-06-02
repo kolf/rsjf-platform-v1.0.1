@@ -1,0 +1,56 @@
+<nav class="navbar navbar-default login-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <img class="navbar-brand login-brand" src="assets/images/common/logo_02.png">
+        </div>
+    </div>
+</nav>
+<div class="login-content">
+    <div class="login-bg hidden-xs hidden-sm"></div>
+    <div class="container">
+        <div class="panel login-panel col-md-3 col-xs-8 col-xs-offset-2 col-md-offset-9">
+            <div class="panel-heading"><h3 class="text-center">平台登录</h3>
+            </div>
+            <div class="panel-body">
+                <form name="Form" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" ng-model="vm.form.userLoginName" type="text" placeholder="金服账号/邮箱/手机号" name="username" valid-method="blur" validator="required, username" required-error-message="帐号为必填项">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <input class="form-control" name="password" ng-model="vm.form.password" type="password" placeholder="您的密码" valid-method="blur" validator="required, password" required-error-message="密码为必填项">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-8">
+                            <input class="form-control" name="validateCode" ng-model="vm.form.imgcode" type="text" placeholder="验证码" valid-method="blur" validator="required, validateCode" required-error-message="验证为必填项">
+                        </div>
+                        <div class="col-xs-4 ">
+                            <img class="img-responsive login-verify" ng-click="vm.getImgCode()" src="{{vm.imgCode}}" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12 ">
+                            <div class="checkbox">
+                                <label><input type="checkbox">记住账号</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <button class="btn btn-primary btn-block" xng-disabled="!vm.checkValid(Form)" ng-click="vm.login(Form)" type="submit">登 录</button>
+                        </div>
+                    </div>
+                    <h5 class="col-sm-12 text-center"><a href="">账户激活</a> | <a href="">找回密码</a></h5>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p class="text-center">Copyright © 2015融数金服 辽ICP备15009643号-1</p>
+    </div>
+</div>

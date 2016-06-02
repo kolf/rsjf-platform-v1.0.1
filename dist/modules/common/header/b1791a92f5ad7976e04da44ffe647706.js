@@ -1,0 +1,1 @@
+define(["../../../38459714ca0f8a4a32d1d9d5419fd8ce"],function(n){n.filter("showMenusUrl",function(){return function(n){return-1!=n.indexOf("#")}}).filter("getMenusUrl",function(){return function(n){if(-1==n.indexOf("#"))return n;var e=n.split("#")[1];return e.substr(e.indexOf("/")+1,e.length)}})});

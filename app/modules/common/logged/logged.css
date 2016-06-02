@@ -1,0 +1,80 @@
+.container-full{
+    /*width: auto;*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sidebar{
+    width: 200px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: #2e313f
+}
+
+.navbar{
+    padding-left: 185px;
+    padding-right: 15px;
+}
+.open-left{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+.header-brand{
+    padding: 35px;
+    /*background-color: #dd4b39;*/
+    display: block;
+}
+
+.page-header{
+    margin-top: 0;
+}
+
+.content{
+    padding-left: 200px;
+}
+
+.search-box{
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.search-box .dropdown{
+    margin-right:5px;
+}
+.search-box .input-group{
+    width: 300px;
+}
+.nav-sidebar{
+    /*padding-top: 40px;*/
+    padding-left: 0;
+}
+.nav-tabs{
+    margin-bottom: 15px;
+}
+.nav-sidebar a{
+    text-decoration: none;
+    display: block;
+    padding: 12px 15px;
+    color: #ccc;
+    border-left:2px solid transparent;
+}
+
+.nav-sidebar li a:hover,.nav-sidebar li a.active{
+    border-left:2px solid #dd4b39;
+    background-color: #232630;
+}
+
+.breadcrumb{
+    background-color: transparent;
+}
+
+.page-title{
+    font-size: 24px;
+}

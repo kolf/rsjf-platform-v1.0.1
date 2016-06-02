@@ -1,0 +1,1 @@
+define(["../../../38459714ca0f8a4a32d1d9d5419fd8ce"],function(e){e.controller("HeaderController",["$scope","$state","UserLogin",function(e,n,o){e.name="nico"}])});
